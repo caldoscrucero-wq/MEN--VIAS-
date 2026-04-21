@@ -428,17 +428,18 @@ section {
     <h1>Menú</h1>
     <p>Tradición desde 1994</p>
 
-    <div class="botones">
-      <button onclick="scrollToSection('caldos')">Caldos</button>
-      <button onclick="scrollToSection('pancita')">Pancita</button>
-      <button onclick="scrollToSection('chilaquiles')">Chilaquiles</button>
-      <button onclick="scrollToSection('enchiladas')">Enchiladas</button>
-      <button onclick="scrollToSection('asados')">Asados</button>
-      <button onclick="scrollToSection('tacos')">Tacos</button>
-      <button onclick="scrollToSection('infantil')">Infantil</button>
-      <button onclick="scrollToSection('bebidas')">Bebidas</button>
-      <button onclick="scrollToSection('postres')">Postres</button>
-    </div>
+   <div class="botones">
+  <button onclick="scrollToSection('caldos')">Caldos</button>
+  <button onclick="scrollToSection('tradicionales')">Tradicionales</button>
+  <button onclick="scrollToSection('chilaquiles')">Chilaquiles y Enchiladas</button>
+  <button onclick="scrollToSection('asados')">Asados</button>
+  <button onclick="scrollToSection('tacos')">Tacos</button>
+  <button onclick="scrollToSection('antojitos')">Antojitos</button>
+  <button onclick="scrollToSection('infantil')">Infantil</button>
+  <button onclick="scrollToSection('extras')">Extras</button>
+  <button onclick="scrollToSection('bebidas')">Bebidas</button>
+  <button onclick="scrollToSection('postres')">Postres</button>
+</div>
   </div>
 </section>
 
@@ -494,27 +495,45 @@ function scrollToSection(id){
 </body>
 </html>
 
-<div class="section" id="pancita">
-  <h2 class="titulo-seccion titulo-con-linea">Pancita</h2>
+<div class="section" id="tradicionales">
+  <h2 class="titulo-seccion titulo-con-linea">Tradicionales</h2>
   <div class="linea-talavera"></div>
 
   <div class="section-left">
+
+    <div class="subcategory">Mole con arroz o frijoles</div>
     <ul>
-      <li>Grande: $127</li>
-      <li>Chico: $120</li>
-      <li>(Disponibles solo viernes, sábados, domingo, lunes y días festivos)</li>
+      <li>Pechuga 1/2: $120</li>
+      <li>Pechuga 1/4: $100</li>
+      <li>Pierna o muslo: $100</li>
+      <li>Huacal: $88</li>
+      <li>Ala: $85</li>
+      <li>Sin pieza de carne: $50</li>
     </ul>
+
+    <div class="subcategory">Pozole</div>
+    <ul>
+      <li>$122</li>
+      <li>Costilla, maciza, cabeza de puerco o surtida</li>
+      <li>Carne de gallina</li>
+    </ul>
+
+    <div class="subcategory">Pancita de res</div>
+    <ul>
+      <li>Grande: $122</li>
+      <li>Chico: $117</li>
+    </ul>
+
   </div>
 
   <div class="section-right">
-    <img src="pancita.jpg" alt="Pancita">
+    <img src="pancita.jpg" alt="Tradicionales">
   </div>
- 
+
   <div class="volver-menu">
     <button onclick="scrollToSection('hero')">← Volver al Menú</button>
   </div>
 </div>
-
 <style>
   /* Ajuste exclusivo para la imagen de Pancita */
   #pancita .section-right img {
@@ -537,21 +556,23 @@ function scrollToSection(id){
   }
 </style>
 
-<!-- Chilaquiles -->
-<div class="section" id="chilaquiles">
-  <h2 class="titulo-seccion titulo-con-linea">Chilaquiles</h2>
+<div class="section" id="chilaquiles-enchiladas">
+  <h2 class="titulo-seccion titulo-con-linea">Chilaquiles y Enchiladas</h2>
   <div class="linea-talavera"></div>
 
+  <!-- CHILAQUILES / ENCHILADAS VERDES, ROJAS O MOLE -->
+  <div class="subcategory">Verdes, Rojas o Mole</div>
   <div class="section-left">
     <ul>
-      <li>Aguja norteña: $130</li>
-      <li>Arrachera: $170</li>
-      <li>Carne de gallina: $125</li>
+      <li>Arrachera (solo orden completa): $175</li>
       <li>Costilla (con o sin hueso): $130</li>
       <li>Pechuga asada: $130</li>
       <li>Pechuga empanizada: $130</li>
-      <li>Huevo: $120</li>
-      <li>Sencillos: $90</li>
+      <li>Carne de gallina: $125</li>
+      <li>½ Orden: $100</li>
+      <li>Huevo: $95</li>
+      <li>½ Orden Huevo: $55</li>
+      <li>Sencillos: $80</li>
     </ul>
   </div>
 
@@ -559,52 +580,41 @@ function scrollToSection(id){
     <img src="chilaquiles.jpg" alt="Chilaquiles">
   </div>
 
-  <div class="volver-menu">
-    <button onclick="scrollToSection('hero')">← Volver al Menú</button>
-  </div>
-</div>
-  
-<!-- Enchiladas -->
-<div class="section" id="enchiladas">
-  <h2 class="titulo-seccion titulo-con-linea">Enchiladas</h2>
-  <div class="linea-talavera"></div>
-
-  <div class="subcategory">Verde, Rojas y Mole</div>
-  <div class="section-left">
-    <ul>
-      <li>Arrachera: $170</li>
-      <li>Carne de gallina: $125</li>
-      <li>Costilla (con o sin hueso): $130</li>
-      <li>Pechuga asada: $130</li>
-      <li>Pechuga empanizada: $130</li>
-      <li>Huevo: $120</li>
-      <li>Sencillas: $90</li>
-    </ul>
-  </div>
-  <div class="section-right">
-    <img src="enmoladas.jpg" alt="Enchiladas">
-  </div>
-
+  <!-- ENCHILADAS SUIZAS -->
   <div class="subcategory">Enchiladas Suizas</div>
   <div class="section-left">
     <ul>
-      <li>Arrachera: $185</li>
-      <li>Carne de gallina: $145</li>
+      <li>Arrachera: $200</li>
       <li>Costilla (con o sin hueso): $160</li>
       <li>Pechuga asada: $160</li>
       <li>Pechuga empanizada: $160</li>
-      <li>Sencillas: $90</li>
+      <li>½ Orden: $100</li>
+      <li>Sencillas: $140</li>
     </ul>
   </div>
+
   <div class="section-right">
     <img src="enchiladas.jpg" alt="Enchiladas Suizas">
   </div>
 
+  <!-- HUEVOS -->
+  <div class="subcategory">Huevos al gusto</div>
+  <div class="section-left">
+    <ul>
+      <li>Cualquier variedad: $60</li>
+      <li>A la mexicana</li>
+      <li>Con jamón</li>
+      <li>Revueltos</li>
+      <li>Estrellados</li>
+      <li>Con longaniza</li>
+      <li>Con arroz o frijoles</li>
+    </ul>
+  </div>
+
   <div class="volver-menu">
     <button onclick="scrollToSection('hero')">← Volver al Menú</button>
   </div>
 </div>
-
 <!-- Asados -->
 <div class="section" id="asados">
   <h2 class="titulo-seccion titulo-con-linea">Asados</h2>
@@ -654,6 +664,80 @@ function scrollToSection(id){
     <button onclick="scrollToSection('hero')">← Volver al Menú</button>
   </div>
 </div>
+<div class="section" id="antojitos">
+  <h2 class="titulo-seccion titulo-con-linea">Antojitos Mexicanos</h2>
+  <div class="linea-talavera"></div>
+
+  <div class="section-left">
+
+    <div class="subcategory">Gorditas</div>
+    <ul>
+      <li>Sencilla: $45</li>
+      <li>Con carne: $60</li>
+    </ul>
+
+    <div class="subcategory">Huaraches</div>
+    <ul>
+      <li>Arrachera: $175</li>
+      <li>Costilla: $130</li>
+      <li>Bistec: $130</li>
+      <li>Campechano: $130</li>
+      <li>Longaniza: $130</li>
+      <li>Pechuga empanizada o asada: $130</li>
+      <li>Suadero: $145</li>
+      <li>Huevo (revuelto o estrellado): $105</li>
+      <li>Sencillo (nopales y queso rallado): $70</li>
+    </ul>
+
+    <div class="subcategory">Pambazos</div>
+    <ul>
+      <li>Tinga: $30</li>
+      <li>Chorizo con papa: $40</li>
+    </ul>
+
+    <div class="subcategory">Quesadillas</div>
+    <ul>
+      <li>Bistec o longaniza: $45</li>
+      <li>Pancita: $40</li>
+      <li>Pollo (tinga): $35</li>
+      <li>Chicharrón: $35</li>
+      <li>Champiñones: $35</li>
+      <li>Queso: $35</li>
+    </ul>
+
+    <div class="subcategory">Sopes</div>
+    <ul>
+      <li>Orden (3 piezas) sencillos: $35</li>
+      <li>Orden (3 piezas) con carne: $55</li>
+      <li>Individual sencillo: $35</li>
+      <li>Individual con carne: $60</li>
+    </ul>
+
+    <div class="subcategory">Tlacoyos</div>
+    <ul>
+      <li>Orden (3 piezas) sencillos: $60</li>
+      <li>Orden (3 piezas) con carne: $70</li>
+      <li>Individual sencillo: $60</li>
+      <li>Individual con carne: $70</li>
+    </ul>
+
+    <div class="subcategory">Otros</div>
+    <ul>
+      <li>Tacos dorados (orden): $115</li>
+      <li>½ orden tacos dorados: $90</li>
+      <li>Tostadas de tinga: $45</li>
+    </ul>
+
+  </div>
+
+  <div class="section-right">
+    <img src="antojitos.jpg" alt="Antojitos Mexicanos">
+  </div>
+
+  <div class="volver-menu">
+    <button onclick="scrollToSection('hero')">← Volver al Menú</button>
+  </div>
+</div>
 
 <!-- Menú Infantil -->
 <div class="section" id="infantil">
@@ -672,6 +756,35 @@ function scrollToSection(id){
   <div class="section-right">
     <img src="tiritas.jpg" alt="Tiritas de Pollo">
     <img src="hamburguesa.jpg" alt="Hamburguesa">
+  </div>
+
+  <div class="volver-menu">
+    <button onclick="scrollToSection('hero')">← Volver al Menú</button>
+  </div>
+</div>
+<div class="section" id="extras">
+  <h2 class="titulo-seccion titulo-con-linea">Extras</h2>
+  <div class="linea-talavera"></div>
+
+  <div class="section-left">
+    <ul>
+      <li>Orden de frijoles: $15</li>
+      <li>Orden de arroz: $30</li>
+      <li>Crema: $10</li>
+      <li>Queso: $10</li>
+      <li>Huevos estrellados: $15 c/u</li>
+      <li>Huevo duro: $7</li>
+      <li>Cabeza de gallina: $9 c/u</li>
+      <li>½ orden de aguacate: $20</li>
+      <li>Orden de aguacate: $40</li>
+      <li>½ docena de tortillas de maíz: $15</li>
+      <li>Orden de tortillas de harina: $15</li>
+      <li>Papas a la francesa: $45</li>
+    </ul>
+  </div>
+
+  <div class="section-right">
+    <img src="extras.jpg" alt="Extras">
   </div>
 
   <div class="volver-menu">
