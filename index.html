@@ -215,6 +215,25 @@ section {
   transform: translateY(-5px);
 }
 
+ .bloque-bebida {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 20px;
+  flex-wrap: wrap;
+  margin-bottom: 20px;
+}
+
+.bloque-bebida .section-left {
+  flex: 1;
+}
+
+.bloque-bebida img {
+  width: 100%;
+  max-width: 280px;
+  border-radius: 12px;
+  display: block;
+}   
  #asados {
   display: block;
 }   
@@ -835,7 +854,9 @@ function scrollToSection(id){
       <li>Horchata</li>
     </ul>
   </div>
-
+  
+ <img src="frías.jpg" class="img-platillo" alt="Aguas frescas">
+</div>
   <!-- Preparadas -->
   <div class="subcategory">Preparadas</div>
   <div class="section-left">
@@ -899,6 +920,8 @@ function scrollToSection(id){
     </li>
   </ul>
 </div>
+ <img src="cerveza.jpg" class="img-platillo" alt="Cerveza">
+</div>
   <!-- Refrescos -->
   <div class="subcategory">Refrescos y embotellados</div>
   <div class="section-left">
@@ -927,11 +950,8 @@ function scrollToSection(id){
     </p>
   </div>
 
-  <div class="section-right">
-    <img src="frías.jpg" alt="Bebidas">
-    <img src="cerveza.jpg" alt="Cerveza">
-    <img src="calientes.jpg" alt="Bebidas calientes">
-  </div>
+  <img src="calientes.jpg" class="img-platillo" alt="Bebidas calientes">
+</div>
 
   <div class="volver-menu">
     <button onclick="scrollToSection('hero')">← Volver al Menú</button>
@@ -964,7 +984,7 @@ function scrollToSection(id){
     <img src="helados.jpg" alt="Helados">
   </div>
   
-  <div class="subcategory">Pasteles COSTCO $72 c/rebanada</div>
+  <div class="subcategory">Pasteles COSTCO $68 c/rebanada</div>
   <div class="postres-grid">
     <div><img src="matilda.jpg" alt="Matilda"><span>Matilda</span></div>
     <div><img src="tortuga.jpg" alt="Tortuga"><span>Tortuga</span></div>
@@ -974,7 +994,7 @@ function scrollToSection(id){
     <div><img src="nuez.jpg" alt="Tarta de nuez"><span>Tarta de nuez</span></div>
   </div>
 
-  <div class="subcategory">Panqués COSTCO $38 c/u</div>
+  <div class="subcategory">Panqués COSTCO $35 c/u</div>
   <div class="postres-grid">
     <div><img src="chocolate.jpg" alt="Chocolate"><span>Chocolate</span></div>
     <div><img src="vainilla.jpg" alt="Vainilla"><span>Vainilla</span></div>
