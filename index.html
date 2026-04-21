@@ -529,6 +529,9 @@ function scrollToSection(id){
   const y = element.getBoundingClientRect().top + window.pageYOffset + yOffset;
   window.scrollTo({top: y, behavior: 'smooth'});
 }
+</script>
+</body>
+</html>
 
 <div class="section" id="tradicionales">
   <h2 class="titulo-seccion titulo-con-linea">Tradicionales</h2>
@@ -593,18 +596,20 @@ function scrollToSection(id){
 
   <!-- ENCHILADAS SUIZAS -->
   <div class="subcategory">Enchiladas Suizas</div>
- <div class="section-left">
-  <ul>
-    <li>Arrachera: $200</li>
-    <li>Costilla: $160</li>
-    <li>Pechuga asada: $160</li>
-    <li>Pechuga empanizada: $160</li>
-    <li>½ Orden: $100</li>
-    <li>Sencillas: $140</li>
-  </ul>
+  <div class="section-left">
+    <ul>
+      <li>Arrachera: $200</li>
+      <li>Costilla (con o sin hueso): $160</li>
+      <li>Pechuga asada: $160</li>
+      <li>Pechuga empanizada: $160</li>
+      <li>½ Orden: $100</li>
+      <li>Sencillas: $140</li>
+    </ul>
+  </div>
 
-  <img src="enchiladas.jpg" alt="Enchiladas" class="img-platillo">
-</div>
+  <div class="section-right">
+    <img src="enchiladas.jpg" alt="Enchiladas Suizas">
+  </div>
 
   <!-- HUEVOS -->
   <div class="subcategory">Huevos al gusto</div>
@@ -980,8 +985,5 @@ function scrollToSection(id){
 
   <div class="volver-menu">
     <button onclick="scrollToSection('hero')">← Volver al Menú</button>
-  </script>
-</body>
-</html>
   </div>
 </div>
