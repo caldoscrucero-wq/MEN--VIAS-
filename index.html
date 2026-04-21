@@ -252,6 +252,9 @@ section {
   display: block;
   margin: 10px auto 20px;
 }
+#bebidas {
+  flex-direction: column;
+}    
 .volver-menu {
   width: 100%;
   text-align: center;
@@ -832,14 +835,15 @@ function scrollToSection(id){
   </div>
 </div>
 
- <!-- Bebidas -->
+<!-- Bebidas -->
 <div class="section" id="bebidas">
   <h2 class="titulo-seccion titulo-con-linea">Bebidas</h2>
   <div class="linea-talavera"></div>
 
-  <!-- Aguas de frutas -->
-  <div class="subcategory">Aguas de frutas</div>
   <div class="section-left">
+
+    <!-- Aguas de frutas -->
+    <div class="subcategory">Aguas de frutas</div>
     <p><strong>500 ml: $37 | 900 ml: $56 | Jarra: $105</strong></p>
     <ul>
       <li>Fresa</li>
@@ -853,111 +857,82 @@ function scrollToSection(id){
       <li>Jamaica</li>
       <li>Horchata</li>
     </ul>
-  </div>
-  
- <img src="frías.jpg" class="img-platillo" alt="Aguas frescas">
-</div>
-  <!-- Preparadas -->
-  <div class="subcategory">Preparadas</div>
-  <div class="section-left">
+
+    <img src="frías.jpg" class="img-platillo" alt="Aguas frescas">
+
+    <!-- Preparadas -->
+    <div class="subcategory">Preparadas</div>
     <p><strong>500 ml | 900 ml | Jarra</strong></p>
     <ul>
-      <li>Mineral............$35 | $48</li>
-      <li>Sangría............$35 | $75</li>
-      <li>Limonada........$40 | $70 | $95</li>
-      <li>Naranjada.......$35 | $60 | $95</li>
+      <li>Mineral $35 | $48</li>
+      <li>Sangría $35 | $75</li>
+      <li>Limonada $40 | $70 | $95</li>
+      <li>Naranjada $35 | $60 | $95</li>
     </ul>
-  </div>
 
- <!-- Jugos y licuados -->
-<div class="subcategory">Jugos y licuados</div>
-<div class="section-left">
-  <ul>
-    <li>Jugo de naranja.....$40 | $80 | $130</li>
-    <li>
-      Licuados............................$45 | $85  
-      <br>(Chocolate, fresa, guayaba)
-    </li>
-    <li>Coctel de frutas con miel y granola: $65</li>
-  </ul>
-</div>
-<!-- Alcohol -->
-<div class="subcategory">Alcohol</div>
-<div class="section-left">
-  <ul>
-    <li>Cantarito: $70 | $120</li>
+    <!-- Jugos -->
+    <div class="subcategory">Jugos y licuados</div>
+    <ul>
+      <li>Jugo de naranja $40 | $80 | $130</li>
+      <li>Licuados $45 | $85 (Chocolate, fresa, guayaba)</li>
+      <li>Coctel de frutas con miel y granola: $65</li>
+    </ul>
 
-    <li>
-      <strong>Corona y Victoria</strong>
-      <div class="fila-bebida">
-        <span>Sola</span>
-        <span>$50 | $75 (Mega)</span>
-      </div>
-      <div class="fila-bebida">
-        <span>Chelada</span>
-        <span>$60 | $85 (Mega)</span>
-      </div>
-      <div class="fila-bebida">
-        <span>Michelada</span>
-        <span>$65 | $115 (Mega)</span>
-      </div>
-    </li>
+    <!-- Alcohol -->
+    <div class="subcategory">Alcohol</div>
+    <ul>
+      <li>Cantarito: $70 | $120</li>
 
-    <li>
-      <strong>Modelo y Pacífico</strong>
-      <div class="fila-bebida">
-        <span>Sola</span>
-        <span>$55</span>
-      </div>
-      <div class="fila-bebida">
-        <span>Chelada</span>
-        <span>$65</span>
-      </div>
-      <div class="fila-bebida">
-        <span>Michelada</span>
-        <span>$70</span>
-      </div>
-    </li>
-  </ul>
-</div>
- <img src="cerveza.jpg" class="img-platillo" alt="Cerveza">
-</div>
-  <!-- Refrescos -->
-  <div class="subcategory">Refrescos y embotellados</div>
-  <div class="section-left">
+      <li>
+        <strong>Corona y Victoria</strong>
+        <div class="fila-bebida"><span>Sola</span><span>$50 | $75</span></div>
+        <div class="fila-bebida"><span>Chelada</span><span>$60 | $85</span></div>
+        <div class="fila-bebida"><span>Michelada</span><span>$65 | $115</span></div>
+      </li>
+
+      <li>
+        <strong>Modelo y Pacífico</strong>
+        <div class="fila-bebida"><span>Sola</span><span>$55</span></div>
+        <div class="fila-bebida"><span>Chelada</span><span>$65</span></div>
+        <div class="fila-bebida"><span>Michelada</span><span>$70</span></div>
+      </li>
+    </ul>
+
+    <img src="cerveza.jpg" class="img-platillo" alt="Cerveza">
+
+    <!-- Refrescos -->
+    <div class="subcategory">Refrescos y embotellados</div>
     <ul>
       <li>Refrescos 355 ml: $28</li>
       <li>Refrescos 600 ml: $32</li>
       <li>Agua embotellada 500 ml: $20</li>
       <li>Agua embotellada 900 ml: $28</li>
     </ul>
-  </div>
 
-  <!-- Calientes -->
-  <div class="subcategory">Calientes</div>
-  <div class="section-left">
+    <!-- Calientes -->
+    <div class="subcategory">Calientes</div>
     <ul>
-      <li>Café de olla.......................$30</li>
-      <li>Café con leche................$35</li>
-      <li>Nescafé............................$28</li>
-      <li>Chocolate abuelita.....$35</li>
-      <li>Té sabores varios.........$28</li>
-      <li>Tizana:............................$48</li>
+      <li>Café de olla $30</li>
+      <li>Café con leche $35</li>
+      <li>Nescafé $28</li>
+      <li>Chocolate abuelita $35</li>
+      <li>Té $28</li>
+      <li>Tizana $48</li>
     </ul>
+
     <p class="guarnicion">
-      Sabores de tizana: manzana con arándanos, pétalos de rosa, mango con durazno,
+      Sabores: manzana con arándanos, pétalos de rosa, mango con durazno,
       ponche de guayaba, moras del bosque, fresa-kiwi.
     </p>
-  </div>
 
-  <img src="calientes.jpg" class="img-platillo" alt="Bebidas calientes">
-</div>
+    <img src="calientes.jpg" class="img-platillo" alt="Calientes">
+
+  </div>
 
   <div class="volver-menu">
     <button onclick="scrollToSection('hero')">← Volver al Menú</button>
   </div>
 </div>
-
 <!-- Postres -->
 <div class="section" id="postres">
   <h2 class="titulo-seccion titulo-con-linea">Postres</h2>
