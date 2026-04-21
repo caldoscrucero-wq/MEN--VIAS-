@@ -256,6 +256,18 @@ section {
   transform: scale(1.08);
 }
 
+ .img-platillo {
+  width: 100%;
+  max-width: 320px;
+  border-radius: 12px;
+  display: block;
+  margin: 10px auto 20px;
+  transition: 0.3s;
+}
+
+.img-platillo:hover {
+  transform: scale(1.05);
+}   
 /* ===== SUBCATEGORIAS ===== */
 .subcategory {
   font-weight: bold;
@@ -518,6 +530,7 @@ function scrollToSection(id){
       <li>Ala: $85</li>
       <li>Sin pieza de carne: $50</li>
     </ul>
+    <img src="mole.jpg" alt="Mole" class="img-platillo">
 
     <div class="subcategory">Pozole</div>
     <ul>
@@ -531,9 +544,9 @@ function scrollToSection(id){
       <li>Chico: $117</li>
     </ul>
 
+    <img src="pancita.jpg" alt="Pancita" class="img-platillo">
   </div>
 
-  <div class="section-right">
     <img src="pancita.jpg" alt="Tradicionales">
   </div>
 
@@ -541,28 +554,7 @@ function scrollToSection(id){
     <button onclick="scrollToSection('hero')">← Volver al Menú</button>
   </div>
 </div>
-<style>
-  /* Ajuste exclusivo para la imagen de Pancita */
-  #pancita .section-right img {
-    width: 100%;       /* ocupa todo el contenedor */
-    max-width: 350px;  /* ajusta según tu diseño */
-    border-radius: 12px;
-    display: block;
-    margin: 0 auto;    /* centra la imagen */
-    transition: 0.3s;
-  }
-
-  #pancita .section-right img:hover {
-    transform: scale(1.05); /* efecto hover suave */
-  }
-
-  /* Reduce el espacio entre la lista y la imagen */
-  #pancita .section-left,
-  #pancita .section-right {
-    margin-bottom: 0;
-  }
-</style>
-
+ 
 <div class="section" id="chilaquiles y enchiladas">
   <h2 class="titulo-seccion titulo-con-linea">Chilaquiles y Enchiladas</h2>
   <div class="linea-talavera"></div>
